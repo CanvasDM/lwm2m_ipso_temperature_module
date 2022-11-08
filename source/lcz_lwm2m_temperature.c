@@ -7,20 +7,19 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#include <logging/log.h>
+#include <zephyr/logging/log.h>
 LOG_MODULE_REGISTER(lwm2m_temperature, CONFIG_LCZ_LWM2M_TEMPERATURE_LOG_LEVEL);
 
 /**************************************************************************************************/
 /* Includes                                                                                       */
 /**************************************************************************************************/
-#include <zephyr.h>
-#include <init.h>
-#include <lcz_lwm2m.h>
+#include <zephyr/zephyr.h>
+#include <zephyr/init.h>
+#include <zephyr/net/lwm2m.h>
+#include <lwm2m_resource_ids.h>
+#include <lcz_snprintk.h>
+#include <lcz_lwm2m_util.h>
 
-#include "lwm2m_resource_ids.h"
-#include "lcz_lwm2m.h"
-#include "lcz_snprintk.h"
-#include "lcz_lwm2m_util.h"
 #include "lcz_lwm2m_temperature.h"
 
 /**************************************************************************************************/

@@ -6,7 +6,7 @@
 menuconfig LCZ_LWM2M_TEMPERATURE
 	bool "Enable LwM2M Temperature Object"
 	depends on LCZ_LWM2M_UTIL
-	depends on LCZ_LWM2M_IPSO_TEMP_SENSOR
+	depends on LWM2M_IPSO_TEMP_SENSOR
 
 if LCZ_LWM2M_TEMPERATURE
 
